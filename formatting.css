@@ -1,0 +1,40 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+}
+
+p {
+	color: navy;
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+a {
+	background-color: navy;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    border-radius: 10px;
+	display: block;
+	margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 20%;
+}
+
+a:hover {
+    background-color: white;
+    color: navy;
+}
