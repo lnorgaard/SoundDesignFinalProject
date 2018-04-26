@@ -1,1 +1,1 @@
-# "Diseased": a text adventure by Lee Norgaard and Holly Mitchell
+# "I Blackout Every Time I Drink With Ricky": a story with sound
