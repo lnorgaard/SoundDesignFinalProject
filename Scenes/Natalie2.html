@@ -7,10 +7,14 @@
 	</head>
     <body>
 
-        <audio loop="loop" autoplay="autoplay" volume=0.0>
+        <audio id="scary" loop="loop" autoplay="autoplay">
           <source src="./../FinalSounds/Monsters.mp3">
         Your browser does not support the audio element.
         </audio>
+
+        <script>
+            document.getElementById("scary").volume = 0.2;
+        </script>
 
         <br><br>
         <h2>Natalie - 7:12 PM</h2>
