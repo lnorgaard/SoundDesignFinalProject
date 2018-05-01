@@ -60,4 +60,10 @@ a:hover {
     text-align: justify;
     text-justify: inter-word;
     font-size: 20px;
+    padding: 0px 0px;
+    text-align: left; 
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
 }
