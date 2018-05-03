@@ -12,6 +12,15 @@
         Your browser does not support the audio element.
         </audio>
 
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="emoji-text"> </p>
+          </div>
+
+        </div>
+
         
         <br><br>
         <h2>Mark - 7:22 PM</h2>
@@ -48,7 +57,7 @@
 
         Mark quickly grabbed a napkin and rubbed it in. Maybe I should just stop eating and wait for the beer. I don’t want my breath to smell too bad when Natalie gets back.<br><br>
 
-        He did a quick breath check, blowing out a small puff of air into his right hand and sniffing it. All good. <i class="em em-mask" title="No. Not all good. You usually can’t smell your own breath."></i> <br><br>
+        He did a quick breath check, blowing out a small puff of air into his right hand and sniffing it. All good. <button id="emojiK"><i class="em em-mask" title="No. Not all good. You usually can’t smell your own breath."></i></button> <br><br>
 
         <audio controls>
             <source src="./../FinalSounds/Final_SniffBreath.wav">
@@ -62,6 +71,37 @@
         <a href="Ricky2.html">Continue</a>
         </br>
         </br>
+
+        <script>
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            var emojiText = document.getElementById('emoji-text');
+
+            // Get the button that opens the modal
+            var btnK = document.getElementById("emojiK");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btnK.onclick = function() {
+                modal.style.display = "block";
+                emojiText.innerHTML = "No. Not all good. You usually can’t smell your own breath.";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 
     </body>
 </html>
