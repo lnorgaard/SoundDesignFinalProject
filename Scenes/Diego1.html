@@ -16,6 +16,15 @@
             document.getElementById("scary").volume = 0.5;
         </script>
 
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="emoji-text"> </p>
+          </div>
+
+        </div>
+
 
         <br><br>
         <h2>Diego - 7:02 PM</h2>
@@ -41,7 +50,7 @@
 
         “Dude, my hair is my only superpower, and I’m going to use it to its full potential. So how about you fuck off, Mr. I-Have-Literally-Every-Superpower-Ever.”<br><br>
 
-        “Get yourself together. Mark is coming.” <i class="em em-hankey" title="Mark has no powers. Ricky and Diego know that Mark has no powers. Mark does not know that he has no powers. Mark does not know that powers exist."></i> <br><br>
+        “Get yourself together. Mark is coming.” <button id="emojiF"><i class="em em-hankey" title="Mark has no powers. Ricky and Diego know that Mark has no powers. Mark does not know that he has no powers. Mark does not know that powers exist."></i></button> <br><br>
 
         Mark and Natalie walked over to their table, hand in hand.<br><br>
 
@@ -58,7 +67,7 @@
 
         Ricky kicked Diego’s foot under the table.<br><br>
 
-        Diego snapped back to reality, and his vision refocused. On Natalie’s cleavage. Her light caramel skin — and those 36D’s <i class="em em-watermelon" title="Diego may only have one superpower, but he has a 6th sense! He can tell what a woman’s correct bra size is instantly."></i> — reminded him of Jordan’s fantastic ass. The way it stayed perfectly round even when he bent over, and the way that Chinese character tattooed on his left shoulder blade danced when he tensed up his muscles...<br><br>
+        Diego snapped back to reality, and his vision refocused. On Natalie’s cleavage. Her light caramel skin — and those 36D’s <button id="emojiG"><i class="em em-watermelon" title="Diego may only have one superpower, but he has a 6th sense! He can tell what a woman’s correct bra size is instantly."></i></button> — reminded him of Jordan’s fantastic ass. The way it stayed perfectly round even when he bent over, and the way that Chinese character tattooed on his left shoulder blade danced when he tensed up his muscles...<br><br>
 
         Natalie squeezed his hand as hard as she could, and Diego finally woke up from his daydream.<br><br>
 
@@ -67,6 +76,47 @@
         <a href="Mark2.html">Continue</a>
         </br>
         </br>
+
+        <script>
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            var emojiText = document.getElementById('emoji-text');
+
+            // Get the button that opens the modal
+            var btnF = document.getElementById("emojiF");
+            var btnG = document.getElementById("emojiG");
+            var btnH = document.getElementById("emojiH");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btnF.onclick = function() {
+                modal.style.display = "block";
+                emojiText.innerHTML = "Mark has no powers. Ricky and Diego know that Mark has no powers. Mark does not know that he has no powers. Mark does not know that powers exist.";
+            }
+            btnG.onclick = function() {
+                modal.style.display = "block";
+                emojiText.innerHTML = 'Diego may only have one superpower, but he has a 6th sense! He can tell what a woman’s correct bra size is instantly.<button id="emojiH"><i class="em em-key" title="Diego may only have one superpower, but he has a 6th sense! He can tell what a woman’s correct bra size is instantly."></i></button>';
+            }
+            btnH.onclick = function() {
+                modal.style.display = "block";
+                emojiText.innerHTML = "Some women don't know what their correct bra size is. Diego does.";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 
     </body>
 </html>
