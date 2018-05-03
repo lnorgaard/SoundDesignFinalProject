@@ -12,6 +12,15 @@
         Your browser does not support the audio element.
         </audio>
 
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="emoji-text"> </p>
+          </div>
+
+        </div>
+
         <br><br>
         <h2>Ricky - 7:06 PM</h2>
         <br><br>
@@ -19,7 +28,7 @@
 
         Right before Mark’s head exploded from rage, Natalie crushed Diego’s hand and pulled it away from him. She then nervously braided her hair and twirled it into a bun before letting it loose again.<br><br>
 
-        OH. MY. GOD. IT’S HER! IT’S THE DEVIL WOMAN! <i class="em em-imp" title="A bit of an exaggeration. Natalie isn’t quite the “devil woman.” That would be Mary Ann Cotton, Natalie’s idol."></i> The memories that had been brainwashed out of Ricky came flooding back. He remembered Natalie — or Julia, the name she went by at the time — dragging Jon out of the house into a black van before speeding down the street and vanishing from his life. She also used to have that weird habit with her hair. Natalie was a headhunter, which meant she wasn’t here for Mark at all.<br><br>
+        OH. MY. GOD. IT’S HER! IT’S THE DEVIL WOMAN! <button id="emojiI"><i class="em em-imp" title="A bit of an exaggeration. Natalie isn’t quite the “devil woman.” That would be Mary Ann Cotton, Natalie’s idol."></i></button> The memories that had been brainwashed out of Ricky came flooding back. He remembered Natalie — or Julia, the name she went by at the time — dragging Jon out of the house into a black van before speeding down the street and vanishing from his life. She also used to have that weird habit with her hair. Natalie was a headhunter, which meant she wasn’t here for Mark at all.<br><br>
 
         Ricky had to find out what she was up to and make sure that she didn’t break Mark’s soul into tiny little pieces.<br><br>
 
@@ -40,6 +49,37 @@
         <a href="Natalie2.html">Continue</a>
         </br>
         </br>
+
+        <script>
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            var emojiText = document.getElementById('emoji-text');
+
+            // Get the button that opens the modal
+            var btnI = document.getElementById("emojiI");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btnI.onclick = function() {
+                modal.style.display = "block";
+                emojiText.innerHTML = "A bit of an exaggeration. Natalie isn’t quite the “devil woman.” That would be Mary Ann Cotton, Natalie’s idol.";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 
     </body>
 </html>
