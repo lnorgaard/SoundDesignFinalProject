@@ -12,6 +12,15 @@
         Your browser does not support the audio element.
         </audio>
 
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="emoji-text"> </p>
+          </div>
+
+        </div>
+
         <br><br>
         <h2>Ricky - 7:25 PM</h2>
         <br><br>
@@ -25,11 +34,44 @@
 
         <br><br>
 
-        Ricky groaned as his bodily fluids crawled up his chin and back into his mouth. As much as he was glad that he had regenerative powers, it was still painful. He curled up on the floor waiting for his body to regain its usual color.<br><br></p>
+        Ricky groaned as his bodily fluids crawled up his chin and back into his mouth. As much as he was glad that he had regenerative powers, it was still painful. He curled up on the floor waiting for his body to regain its usual color. <button id="emojiM"><i class="em em-biohazard_sign" title="If Ricky didn't have herpes before, he probably has it now."></i></button><br><br>
+
+        <br><br></p>
         </br>
         <a href="Natalie3.html">Continue</a>
         </br>
         </br>
+
+        <script>
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            var emojiText = document.getElementById('emoji-text');
+
+            // Get the button that opens the modal
+            var btnM = document.getElementById("emojiM");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btnM.onclick = function() {
+                modal.style.display = "block";
+                emojiText.innerHTML = "If Ricky didn't have herpes before, he probably has it now.";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 
     </body>
 </html>
