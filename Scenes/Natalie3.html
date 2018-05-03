@@ -15,6 +15,15 @@
         <script>
             document.getElementById("scary").volume = 0.5;
         </script>
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="emoji-text"> </p>
+          </div>
+
+        </div>
         
         <br><br>
         <h2>Natalie - 7:26 PM</h2>
@@ -31,7 +40,7 @@
 
         “What? Well, I’m gonna go back and help Ricky with the beers now,” Natalie said as backed away from the table.<br><br>
 
-        “Okay! I treasure you! <i class="em em-cold_sweat" title="Mark tells her that he treasures/adores/worships/etc. her every day. She has never said it back."></i> Diego’s not that great! He hooks up with every girl he meets!”<br><br>
+        “Okay! I treasure you! <button id="emojiL"><i class="em em-cold_sweat" title="Mark tells her that he treasures/adores/worships/etc. her every day. She has never said it back."></i></button> Diego’s not that great! He hooks up with every girl he meets!”<br><br>
 
         Natalie fast-walked towards the bathroom again, where she saw Diego leaving the men’s room.<br><br>
 
@@ -52,6 +61,37 @@
         <a href="Mark4.html">Continue</a>
         </br>
         </br>
+
+        <script>
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            var emojiText = document.getElementById('emoji-text');
+
+            // Get the button that opens the modal
+            var btnL = document.getElementById("emojiL");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btnL.onclick = function() {
+                modal.style.display = "block";
+                emojiText.innerHTML = "Mark tells her that he treasures/adores/worships/etc. her every day. She has never said it back.";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 
     </body>
 </html>
