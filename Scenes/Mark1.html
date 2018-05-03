@@ -12,12 +12,21 @@
         Your browser does not support the audio element.
         </audio>
 
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="emoji-text"> </p>
+          </div>
+
+        </div>
+
         <br><br>
         <h2>Mark - 7:03 PM</h2>
         <br><br>
-        <p>Mark was nervous about Natalie meeting his friends for the first time. She had been asking to meet Ricky and Diego for the past three weeks. Normally, Mark would leap at any opportunity to show off the fact that he did actually have friends. However, Natalie was different. She was the first girl to ever agree to go out with him. In fact, it was Natalie who asked Mark out. <i class="em em-heartbeat" title="Mark met Natalie at the local trading card shop. She asked him out on the spot, and he said yes."></i> He couldn’t risk losing her, and if anything, meeting his friends might scare her off.<br><br>
+        <p>Mark was nervous about Natalie meeting his friends for the first time. She had been asking to meet Ricky and Diego for the past three weeks. Normally, Mark would leap at any opportunity to show off the fact that he did actually have friends. However, Natalie was different. She was the first girl to ever agree to go out with him. In fact, it was Natalie who asked Mark out. <button id="emojiD"><i class="em em-heartbeat" title="Mark met Natalie at the local trading card shop. She asked him out on the spot, and he said yes."></i></button> He couldn’t risk losing her, and if anything, meeting his friends might scare her off.<br><br>
 
-        Diego was a notorious ladies man. His hair was irritatingly perfect, and it made Mark mad. Diego once ran a marathon and crossed the finish line with his hair still completely intact. <i class="em em-man-gesturing-ok" title="Diego has a perfect undercut with loose, dark waves on top. He sometimes just sits in the salon so that the hairdressers can mimic his flawless do on their other customers."></i> Out of the two, Diego would definitely be the one to steal Natalie away. Ricky, on the other hand, tended to be dark and brooding. Ever since his brother disappeared a couple years ago, Ricky had completely changed his style, and he’d been on the edge, searching for clues as to what happened. He also tended to encourage excessive drinking. The last ten times Mark drank with Ricky, he’d blacked out and had no recollection of the occasion.<br><br>
+        Diego was a notorious ladies man. His hair was irritatingly perfect, and it made Mark mad. Diego once ran a marathon and crossed the finish line with his hair still completely intact. <button id="emojiE"><i class="em em-man-gesturing-ok" title="Diego has a perfect undercut with loose, dark waves on top. He sometimes just sits in the salon so that the hairdressers can mimic his flawless do on their other customers."></i></button> Out of the two, Diego would definitely be the one to steal Natalie away. Ricky, on the other hand, tended to be dark and brooding. Ever since his brother disappeared a couple years ago, Ricky had completely changed his style, and he’d been on the edge, searching for clues as to what happened. He also tended to encourage excessive drinking. The last ten times Mark drank with Ricky, he’d blacked out and had no recollection of the occasion.<br><br>
 
         Mark shook off these thoughts as he parked the car in the brewery parking lot. Glancing over at Natalie, he asked, “Ready?” The two got out of the Prius and walked towards the table where Ricky and Diego were sitting.<br><br>
 
@@ -26,6 +35,42 @@
         <a href="Diego1.html">Continue</a>
         </br>
         </br>
+
+        <script>
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            var emojiText = document.getElementById('emoji-text');
+
+            // Get the button that opens the modal
+            var btnD = document.getElementById("emojiD");
+            var btnE = document.getElementById("emojiE");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btnD.onclick = function() {
+                modal.style.display = "block";
+                emojiText.innerHTML = "Mark met Natalie at the local trading card shop. She asked him out on the spot, and he said yes.";
+            }
+            btnE.onclick = function() {
+                modal.style.display = "block";
+                emojiText.innerHTML = "Diego has a perfect undercut with loose, dark waves on top. He sometimes just sits in the salon so that the hairdressers can mimic his flawless do on their other customers.";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 
     </body>
 </html>
