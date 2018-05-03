@@ -14,14 +14,61 @@
 
         <script>
             document.getElementById("lotus").volume = 0.7;
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            var emojiText = document.getElementById('emoji-text');
+
+            // Get the button that opens the modal
+            var btnA = document.getElementById("emojiA");
+            var btnB = document.getElementById("emojiB");
+            var btnC = document.getElementById("emojiC");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btnA.onclick = function() {
+                modal.style.display = "block";
+                emojiText.innerHTML = "Mark once told Natalie that Diego has a birthmark in the shape of a snail on his left buttcheek. What she doesn’t know is that Diego hasn’t found this birthmark yet.";
+            }
+            btnB.onclick = function() {
+                modal.style.display = "block";
+                emojiText.innerHTML = "soooooooo much";
+            }
+            btnC.onclick = function() {
+                modal.style.display = "block";
+                emojiText.innerHTML = "This drives Mark crazy. We think it’s the smell of her shampoo, but it really doesn’t take much to get Mark going.";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
         </script>
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="emoji-text"> </p>
+          </div>
+
+        </div>
 
         <br><br>
         <h2>Natalie - 6:29 PM</h2>
         <br><br>
-        <p>Natalie was nervous to finally meet Mark’s friends for the first time. Tonight, they would be hanging out at the popular brewery in Strooptown. Mark — whom Natalie had been dating for the last three weeks — constantly talked about his two best friends. Even without meeting them, she already knew almost everything about Ricky and Diego, including some weird, personal details. <i class="em em-grimacing" title="Mark once told Natalie that Diego has a birthmark in the shape of a snail on his left buttcheek. What she doesn’t know is that Diego hasn’t found this birthmark yet."></i> This was partially because Mark talked so much around Natalie. <i class="em em-see_no_evil" title="soooooooo much"></i> And when he ran out of things about himself to talk about, his default topic was his two friends.<br><br>
+        <p>Natalie was nervous to finally meet Mark’s friends for the first time. Tonight, they would be hanging out at the popular brewery in Strooptown. Mark — whom Natalie had been dating for the last three weeks — constantly talked about his two best friends. Even without meeting them, she already knew almost everything about Ricky and Diego, including some weird, personal details. <button id="emojiA"><i class="em em-grimacing" title="Mark once told Natalie that Diego has a birthmark in the shape of a snail on his left buttcheek. What she doesn’t know is that Diego hasn’t found this birthmark yet."></i></button> This was partially because Mark talked so much around Natalie. <button id="emojiB"><i class="em em-see_no_evil" title="soooooooo much"></i></button> And when he ran out of things about himself to talk about, his default topic was his two friends.<br><br>
 
-        When Natalie got nervous, she calmed herself down by french braiding her long, dark hair. She took the neat braid and twisted it into a bun, held it in place with her right hand for a couple of seconds, and then let it loose, shaking her head back and forth. <i class="em em-rose" title="This drives Mark crazy. We think it’s the smell of her shampoo, but it really doesn’t take much to get Mark going."></i> She did this as Mark arrived outside her house.<br><br>
+        When Natalie got nervous, she calmed herself down by french braiding her long, dark hair. She took the neat braid and twisted it into a bun, held it in place with her right hand for a couple of seconds, and then let it loose, shaking her head back and forth. <button id="emojiC"><i class="em em-rose" title="This drives Mark crazy. We think it’s the smell of her shampoo, but it really doesn’t take much to get Mark going."></i></button> She did this as Mark arrived outside her house.<br><br>
 
         Through her window, she watched as Mark parked his silver Prius next to the curb, got out of the driver’s seat, and scampered around the front of the car to the passenger’s side.<br><br>
 
