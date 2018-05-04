@@ -59,17 +59,17 @@ a:hover {
 
 .normal, #normal {
     color: blue;
-    margin-left: 5%;
+    margin-left: 0%;
     margin-right: 0%;
     text-justify: inter-word;
-    background-color: black;
+    background-color: transparent;
     font-size: 20px;
-    padding: 0px 0px;
-    text-align: left; 
+    padding: 0px 0px 0px 0px;
+    text-align: justify; 
     border-radius: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    width: 100%;
+    width: auto;
 }
 
 /* The Modal (background) */
