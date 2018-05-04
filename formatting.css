@@ -37,7 +37,7 @@ img {
     border-radius: 2px;
 }
 
-a {
+.next, #next {
 	background-color: #a6e6ea;
     color: black;
     padding: 14px 25px;
@@ -52,24 +52,9 @@ a {
     font-size: 22px;
 }
 
-a:hover {
+.next:hover, #next:hover {
     background-color: black;
     color: #a6e6ea;
-}
-
-.normal, #normal {
-    color: blue;
-    margin-left: 0%;
-    margin-right: 0%;
-    text-justify: inter-word;
-    background-color: transparent;
-    font-size: 20px;
-    padding: 0px 0px 0px 0px;
-    text-align: justify; 
-    border-radius: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: auto;
 }
 
 /* The Modal (background) */
